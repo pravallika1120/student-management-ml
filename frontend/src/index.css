@@ -1,0 +1,376 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+
+  background: linear-gradient(
+    135deg,
+    #0b0f14 0%,
+    #151b23 50%,
+    #252d36 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   BACKGROUND CIRCLES
+========================================= */
+
+.background-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  pointer-events: none;
+}
+
+.circle-one {
+  width: 450px;
+  height: 450px;
+
+  top: -200px;
+  left: -150px;
+}
+
+.circle-two {
+  width: 500px;
+  height: 500px;
+
+  right: -200px;
+  bottom: -200px;
+}
+
+.circle-three {
+  width: 250px;
+  height: 250px;
+
+  right: 15%;
+  top: 10%;
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+  width: 430px;
+
+  padding: 40px;
+
+  background: #1e232a;
+
+  border: 1px solid #3d4650;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.55);
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   UNIVERSITY ICON
+========================================= */
+
+.university-icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #111820;
+
+  border: 1px solid #46515d;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.login-title {
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  margin: 0 0 8px 0;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.login-subtitle {
+  text-align: center;
+
+  color: #d0d5da;
+
+  font-size: 15px;
+
+  margin: 0 0 5px 0;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.login-description {
+  text-align: center;
+
+  color: #8f9aa5;
+
+  font-size: 13px;
+
+  margin: 0 0 30px 0;
+}
+
+
+/* =========================================
+   INPUT GROUP
+========================================= */
+
+.login-input-group {
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.login-input-group label {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  margin-bottom: 8px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.login-input-group input {
+  display: block;
+
+  width: 100%;
+
+  height: 48px;
+
+  padding: 12px 15px;
+
+  background: #11161c;
+
+  color: #ffffff;
+
+  border: 1px solid #46515d;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+
+.login-input-group input:focus {
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.login-input-group input::placeholder {
+  color: #737d87;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-button {
+  display: block;
+
+  width: 100%;
+
+  height: 48px;
+
+  margin-top: 5px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.login-button:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+
+/* =========================================
+   REGISTER
+========================================= */
+
+.register-text {
+  text-align: center;
+
+  color: #aeb6be;
+
+  margin-top: 25px;
+
+  font-size: 15px;
+}
+
+
+.register-text a {
+  color: #60a5fa;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  margin-left: 5px;
+}
+
+
+.register-text a:hover {
+  color: #93c5fd;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .login-card {
+    width: 90%;
+
+    padding: 30px 25px;
+  }
+
+  .login-title {
+    font-size: 27px;
+  }
+
+}
+
+/* =========================================
+   REGISTRATION PAGE
+========================================= */
+
+.register-card {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.register-card::-webkit-scrollbar {
+  width: 5px;
+}
+
+.register-card::-webkit-scrollbar-track {
+  background: #1e232a;
+}
+
+.register-card::-webkit-scrollbar-thumb {
+  background: #46515d;
+  border-radius: 10px;
+}
