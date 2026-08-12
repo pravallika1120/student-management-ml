@@ -3,6 +3,10 @@
 A full-stack web-based **Student Management System Using Machine Learning** developed as a university academic project. The application provides secure student authentication, student record management, academic information management, dashboard statistics, and Machine Learning-based student performance prediction.
 
 ---
+## Project live links
+
+### Backend
+https://student-management-ml.onrender.com
 
 ## 📌 Project Overview
 
